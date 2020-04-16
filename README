@@ -1,0 +1,16 @@
+a data analytics system in Python that processes structured
+data of logs. Assume that logs are related to user usage of a web or mobile application. The
+system can process queries so that a data analyst can explore the logs data.
+The structure of a log entry is quite generic. Each log is composed of the following fields.
+• arrivaltime: This field has the timestamp of the arrival of the log. It is the UNIX
+timestamp. See the standard Python package time and the following code snippets for its
+usage.
+• user: This is a string that holds the id of the user who initiated the log.
+• session: This is a integer number which represents the session number of the user.
+• event: This is a string that holds the name of the event. For instance, signin, signout,
+follow, or click can be some events related to a Web usage session. The names of the
+event is of course domain-dependent and logs are generic in the sense that event name can
+be any string.
+• usrfield: This is a domain dependent field holding a integer number. For example, for the
+signin event this field can hold a number showing how many unsuccessful login attempts
+occurred before the user signs in.
